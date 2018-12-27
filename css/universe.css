@@ -1,4 +1,4 @@
-html, body{
+html, body, #stars{
     height: 100%; /* 高度沒設定的話高度都是為0 */
     overflow: hidden;
 }
