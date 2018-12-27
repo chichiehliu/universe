@@ -1,5 +1,6 @@
-* {
+html, body{
     height: 100%; /* 高度沒設定的話高度都是為0 */
+    overflow: hidden;
 }
 #univer{
     background: radial-gradient(#555, #000); /* 漸變顏色 */
@@ -30,16 +31,21 @@
     margin-left: -100px;
     animation: sunlight 5s infinite alternate;
 }
+@keyframes spin{
+    from{transform: rotate(0)}
+    to{transform: rotate(360deg)} /* deg是角度 */
+}
 #earthorbit{
     width: 600px;
     height: 600px;
     border-radius: 50%;
-    border:solid 2px red;
+    /* border:solid 2px red; */
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -300px;
     margin-left: -300px;
+    animation: spin 30s linear infinite;
 }
 #earth{
     width: 80px;
@@ -47,4 +53,28 @@
     position: absolute;
     margin-top: -40px;
     margin-left:-40px;
+    top:50%;/* top:300px; */
+    animation:spin 20s linear infinite;
+}
+#moonorbit{
+    width: 120px;
+    height: 120px;
+    /* border:solid 1px orange; */
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -60px;
+    top: 50%;
+    animation: spin 5s linear infinite;
+}
+#moon{
+    width: 20px;
+    height: 20px;
+    background:radial-gradient(rgb(223, 223, 223), rgb(196, 196, 196));
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -10px;
+    top:50%;
+    animation: spin 3s linear infinite;
 }
