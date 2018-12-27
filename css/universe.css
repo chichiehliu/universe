@@ -3,7 +3,7 @@ html, body, #stars{
     overflow: hidden;
 }
 #univer{
-    background: radial-gradient(#555, #000); /* 漸變顏色 */
+    background: radial-gradient(rgb(116, 139, 153), rgb(1, 6, 77)); /* 漸變顏色 */
 }
 @keyframes starflash{
     from{opacity: 1;}
@@ -30,6 +30,18 @@ html, body, #stars{
     margin-top: -100px;
     margin-left: -100px;
     animation: sunlight 5s infinite alternate;
+}
+@keyframes pe{
+    from{top: 100%; left:100%;}
+    to{top: 0%; left:0%;}
+}
+#go{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    animation: pe 30s linear infinite;
 }
 @keyframes spin{
     from{transform: rotate(0)}
