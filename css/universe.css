@@ -1,0 +1,50 @@
+* {
+    height: 100%; /* 高度沒設定的話高度都是為0 */
+}
+#univer{
+    background: radial-gradient(#555, #000); /* 漸變顏色 */
+}
+@keyframes starflash{
+    from{opacity: 1;}
+    to{opacity: 0.2;}
+}
+#stars {
+    background-image: url("../images/stars.png");
+    background-size: cover; /* 背景圖片覆蓋 */
+    animation: starflash 3s infinite alternate; /* infinite 無限循環 alternate 動畫前後動作交替*/
+}
+@keyframes sunlight{
+    from{box-shadow: 0 0 50px #f5c91a;}
+    to{box-shadow: 0 0 100px #f5c91a;}
+}
+#sun{
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(#f5c313, #ec7e08);
+    box-shadow: 0 0 50px #f5c91a;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    animation: sunlight 5s infinite alternate;
+}
+#earthorbit{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border:solid 2px red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
+}
+#earth{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-top: -40px;
+    margin-left:-40px;
+}
